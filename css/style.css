@@ -1,0 +1,115 @@
+:root {
+  --blue: #2953cc;
+  --black: #000000;
+  --white: #ffffff;
+  --baby-blue: #a9bdf6;
+  --yellow: #ecbd23;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  white-space: pre-wrap;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+
+.button {
+  color: var(--white);
+  background: var(--blue);
+  font-weight: 500;
+  min-height: 48px;
+  min-width: 96px;
+  padding: 14px 24px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 1000px;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 87.5rem;
+  margin: 0 auto;
+}
+
+/****************** Global Styles ********************/
+
+.hero-title-box {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.hero-title-box h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.hero-title-box h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.hero-title-box h2 span {
+  color: var(--blue);
+}
+
+.hero-title-box h1 span {
+  color: var(--blue);
+}
+
+.hero-content-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 100%;
+}
+
+.hero-content-box img {
+  position: relative;
+  top: -50px;
+  display: block;
+  width: 35rem;
+  margin: 0 auto;
+}
+
+.hero-content-box .content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  max-width: 30rem;
+  line-height: 3rem;
+}
+
+.hero-content-box .content h2 span {
+  color: var(--blue);
+}
+
+.hero-content-box .content #stars {
+  color: var(--yellow);
+  margin-right: 0.5rem;
+}
+
+.hero-content-box .content #reviews {
+  color: var(--black);
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.hero-content-box .content p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  max-width: 30rem;
+  margin-bottom: 2.5rem;
+}
+
+/****************** Hero Styles ********************/

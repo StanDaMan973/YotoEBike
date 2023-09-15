@@ -113,3 +113,95 @@ p {
 }
 
 /****************** Hero Styles ********************/
+
+.bike-benefits {
+  background: var(--black);
+}
+
+.benefits-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.bike-benefits .box {
+  margin: 0px 0px 3rem 0px;
+  text-align: center;
+}
+
+.bike-benefits .box .main-title {
+  color: var(--white);
+  font-family: "Oswald", sans-serif;
+  font-family: 700;
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.bike-benefits .box .secondary-title {
+  color: var(--blue);
+  font-family: "Oswald", sans-serif;
+  font-family: 700;
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.bike-benefits .box p {
+  color: var(--white);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/****************** Bike Benefits Styles ********************/
+.testmonials {
+  background: var(--white);
+  min-height: auto;
+}
+
+.testmonials-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.testmonials .box {
+  margin: 3.5rem 0px 3rem 0px;
+  text-align: center;
+}
+
+.main-title {
+  color: var(--black);
+  font-family: "Oswald", sans-serif;
+  font-family: 700;
+  font-size: 2.5rem;
+  display: block;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.testmonials .box #stars {
+  color: var(--yellow);
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.testmonials .box p {
+  color: var(--black);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.testmonials .box .name {
+  color: var(--black);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/****************** Testmonials Styles ********************/

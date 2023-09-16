@@ -4,6 +4,7 @@
   --white: #ffffff;
   --baby-blue: #a9bdf6;
   --yellow: #ecbd23;
+  --QA: #2953cc;
 }
 
 h1,
@@ -174,7 +175,7 @@ p {
 .main-title {
   color: var(--black);
   font-family: "Oswald", sans-serif;
-  font-family: 700;
+  font-weight: bold;
   font-size: 2.5rem;
   display: block;
   margin-top: 2rem;
@@ -205,3 +206,119 @@ p {
 }
 
 /****************** Testmonials Styles ********************/
+
+.QA {
+  background-color: var(--QA);
+  padding: 2rem 0rem;
+}
+
+.QA-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--white);
+  margin-bottom: 4rem;
+}
+
+.QA-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: auto;
+  gap: 4rem;
+}
+
+.QA-container .question-box {
+  color: var(--white);
+  border-bottom: 1px dotted var(--white);
+  margin-bottom: 3rem;
+}
+
+.QA-container .question-box span {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.QA-container .question-box p {
+  font-family: "Roboto", sans-serif;
+  margin: 3rem 0rem;
+  font-size: 1.2rem;
+}
+
+.QA-container .question-box#question-4 {
+  border: none;
+}
+
+.QA-image .img-box-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.QA-image .img-box-1 img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 350px;
+  border-radius: 12px;
+  min-height: 500px;
+}
+
+.QA-image .img-box-2 img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 12px;
+  max-height: 300px;
+}
+
+/****************** Q&A Styles ********************/
+
+/****************** Buy Now Styles ********************/
+
+.buy-now {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6530987394957983) 0%,
+      rgba(0, 0, 0, 0.6194852941176471) 40%
+    ),
+    url("/img/yotoEBikeBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 400px;
+}
+
+.buy-now .bn-content {
+  position: relative;
+  top: 80px;
+  text-align: center;
+}
+
+.buy-now .bn-content h3 {
+  display: block;
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: normal;
+  padding: 2rem 0rem 1rem 0rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.buy-now .bn-content span {
+  display: block;
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2rem 0rem 3rem 0rem;
+  font-family: "Oswald", sans-serif;
+}
+
+/****************** Footer  Styles ********************/
+
+footer {
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding: 2.5rem 0rem;
+}

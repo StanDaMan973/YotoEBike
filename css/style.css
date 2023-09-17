@@ -1,10 +1,10 @@
 :root {
-  --blue: #2953cc;
+  --blue: #006a43;
   --black: #000000;
   --white: #ffffff;
   --baby-blue: #a9bdf6;
   --yellow: #ecbd23;
-  --QA: #2953cc;
+  --QA: #006a43;
 }
 
 h1,
@@ -43,7 +43,7 @@ p {
 
 .hero-title-box {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 5em;
 }
 
 .hero-title-box h2 {
@@ -55,7 +55,7 @@ p {
 .hero-title-box h1 {
   font-size: 3.5rem;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
   text-transform: uppercase;
 }
 
@@ -70,14 +70,14 @@ p {
 .hero-content-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 100%;
+  width: 100%;
 }
 
 .hero-content-box img {
   position: relative;
-  top: -50px;
+  top: -120px;
   display: block;
-  width: 35rem;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -85,7 +85,7 @@ p {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  max-width: 30rem;
+  width: 70%;
   line-height: 3rem;
 }
 
@@ -109,7 +109,7 @@ p {
   margin-top: 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
-  max-width: 30rem;
+  max-width: 70%;
   margin-bottom: 2.5rem;
 }
 
@@ -158,7 +158,6 @@ p {
 /****************** Bike Benefits Styles ********************/
 .testmonials {
   background: var(--white);
-  min-height: auto;
 }
 
 .testmonials-box {
@@ -224,7 +223,6 @@ p {
 .QA-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  min-height: auto;
   gap: 4rem;
 }
 
@@ -237,13 +235,14 @@ p {
 .QA-container .question-box span {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.6em;
 }
 
 .QA-container .question-box p {
   font-family: "Roboto", sans-serif;
-  margin: 3rem 0rem;
-  font-size: 1.2rem;
+  margin: 1.5rem 0rem;
+  font-size: 1em;
+  line-height: 1.5rem;
 }
 
 .QA-container .question-box#question-4 {
@@ -253,16 +252,15 @@ p {
 .QA-image .img-box-1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  margin-bottom: 1.3rem;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .QA-image .img-box-1 img {
   display: inline-block;
   vertical-align: middle;
-  max-width: 350px;
+  width: 100%;
   border-radius: 12px;
-  min-height: 500px;
 }
 
 .QA-image .img-box-2 img {
@@ -270,12 +268,9 @@ p {
   vertical-align: middle;
   width: 100%;
   border-radius: 12px;
-  max-height: 300px;
 }
 
 /****************** Q&A Styles ********************/
-
-/****************** Buy Now Styles ********************/
 
 .buy-now {
   background: linear-gradient(
@@ -287,12 +282,12 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 400px;
+  padding: 6rem;
 }
 
 .buy-now .bn-content {
   position: relative;
-  top: 80px;
+  top: 0px;
   text-align: center;
 }
 
@@ -314,11 +309,326 @@ p {
   font-family: "Oswald", sans-serif;
 }
 
-/****************** Footer  Styles ********************/
+/****************** Buy Now Styles ********************/
 
 footer {
   background: var(--black);
   color: var(--white);
   text-align: center;
   padding: 2.5rem 0rem;
+}
+
+/****************** Footer  Styles ********************/
+
+@media screen and (max-width: 1408px) {
+  .testmonials {
+    background: var(--white);
+    padding: 0rem 1rem;
+  }
+
+  .bike-benefits {
+    background: var(--black);
+    padding: 0rem 1rem;
+  }
+
+  .QA-container {
+    padding-left: 2rem;
+  }
+
+  .QA-container .question-box span {
+    font-size: 1.5rem;
+  }
+
+  .QA-container .question-box p {
+    margin: 1.5rem 0rem;
+    font-size: 1.2rem;
+  }
+
+  .QA-container .question-box {
+    color: var(--white);
+    border-bottom: 1px dotted var(--white);
+    margin-bottom: 1rem;
+  }
+
+  .QA-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+  }
+  .QA-image .img-box-1 {
+    width: 85%;
+  }
+
+  .QA-image .img-box-2 {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .introduction {
+    padding-bottom: 4rem;
+  }
+
+  .hero-content-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .hero-content-box img {
+    position: relative;
+    top: -40px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-content-box .content p {
+    max-width: 80%;
+  }
+
+  .QA-container .question-box span {
+    font-size: 1.3rem;
+  }
+
+  .QA-container .question-box p {
+    margin: 1.2rem 0rem;
+    font-size: 1em;
+  }
+  .QA-image .img-box-1 {
+    width: 90%;
+  }
+
+  .QA-image .img-box-2 {
+    width: 90%;
+  }
+
+  .bike-benefits .box .secondary-title {
+    color: var(--blue);
+    font-family: "Oswald", sans-serif;
+    font-family: 700;
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .hero-title-box h1 {
+    margin-bottom: 0rem;
+    font-size: 3rem;
+  }
+
+  .hero-title-box h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  .hero-content-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+  }
+
+  .hero-content-box .content {
+    position: relative;
+    top: -15%;
+    padding: 0rem 6rem;
+  }
+
+  .hero-content-box .content h2 {
+    width: 80%;
+  }
+
+  .hero-content-box img {
+    position: relative;
+    top: 0px;
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .benefits-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+    padding: 2rem 0rem 2.5rem 0rem;
+  }
+
+  .bike-benefits .box {
+    margin: 0px 0px 1rem 0px;
+    text-align: center;
+  }
+
+  .bike-benefits .box p {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .testmonials {
+    background: var(--white);
+    padding: 1rem 1rem;
+  }
+
+  .testmonials-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+  }
+
+  .testmonials .box {
+    margin: 1rem 0px 1.5rem 0px;
+    text-align: center;
+  }
+
+  .QA-container {
+    padding: 0rem 4rem;
+  }
+
+  .QA-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+  }
+
+  .QA-container .question-box span {
+    font-size: 1.8rem;
+  }
+
+  .QA-container .question-box p {
+    margin: 2rem 0rem;
+  }
+
+  .QA-image .img-box-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .QA-image .img-box-2 {
+    width: 85%;
+    margin: 1rem auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .hero-title-box h1 {
+    margin-bottom: 0rem;
+    font-size: 3rem;
+  }
+
+  .hero-title-box h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  .hero-content-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+  }
+
+  .hero-content-box .content {
+    position: relative;
+    top: -10%;
+    padding: 0rem 1.2rem;
+  }
+
+  .hero-content-box .content h2 {
+    width: 100%;
+  }
+
+  .hero-content-box img {
+    position: relative;
+    top: 0px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-content-box .content p {
+    max-width: 100%;
+  }
+
+  .benefits-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+    padding: 2rem 0rem 2.5rem 0rem;
+  }
+
+  .bike-benefits .box {
+    margin: 0px 0px 1rem 0px;
+    text-align: center;
+  }
+
+  .bike-benefits .box p {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .testmonials {
+    background: var(--white);
+    padding: 1rem 1rem;
+  }
+
+  .testmonials-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+  }
+
+  .testmonials .box {
+    margin: 1rem 0px 1.5rem 0px;
+    text-align: center;
+  }
+
+  .QA {
+    background-color: var(--QA);
+    padding: 2rem 2rem;
+  }
+
+  .QA-container {
+    padding: 0rem 0rem;
+  }
+
+  .QA-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+  }
+
+  .QA-container .question-box span {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  .QA-container .question-box p {
+    margin: 2rem 0rem;
+    line-height: 1.5rem;
+  }
+
+  .QA-image .img-box-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .QA-image .img-box-2 {
+    width: 100%;
+    margin: 1.3rem auto 0 auto;
+  }
+
+  .buy-now {
+    padding: 3rem;
+  }
 }
